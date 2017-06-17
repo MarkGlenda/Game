@@ -59,13 +59,17 @@ public class LeaderCard extends javax.swing.JPanel {
                 CardMousePressed(evt);
             }
         });
+<<<<<<< HEAD
 
+=======
+>>>>>>> edit
         this.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseReleased(java.awt.event.MouseEvent evt) {
                 CardMouseReleased(evt);
             }
         });
+<<<<<<< HEAD
         this.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -91,6 +95,16 @@ public class LeaderCard extends javax.swing.JPanel {
     }
     
     private void CardMouseClicked(java.awt.event.MouseEvent evt){
+=======
+    }
+
+    private void CardMousePressed(java.awt.event.MouseEvent evt) {
+        xMouse = evt.getX();
+        yMouse = evt.getY();
+    }
+    
+    private void CardMouseReleased(java.awt.event.MouseEvent evt) {
+>>>>>>> edit
         if(getFocused() == false){
             setFocused(true);
             if(getFocusAni() == null){
@@ -103,6 +117,7 @@ public class LeaderCard extends javax.swing.JPanel {
             if(this.getFocusAni() == null){
             setFocusAni(new CardFocusAnimation(this));
             }
+<<<<<<< HEAD
         }
     }
 
@@ -111,6 +126,12 @@ public class LeaderCard extends javax.swing.JPanel {
         yMouse = evt.getY();
     }
 
+=======
+            setHandSize();
+        }
+    }
+
+>>>>>>> edit
     private void CardMouseDragged(java.awt.event.MouseEvent evt) {
         int finalX;
         int finalY;
