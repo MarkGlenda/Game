@@ -33,6 +33,9 @@ public class CardFocusAnimation {
         public Animation() {
 <<<<<<< HEAD
             travel = (c.getStartY() - Constants.CardFocusedHeight -10)/100;
+=======
+            travel = (c.getStartY() - Constants.CardFocusedHeight -10)/150;
+>>>>>>> edit
         }
         
         @Override
